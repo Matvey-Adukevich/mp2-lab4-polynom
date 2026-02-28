@@ -1,0 +1,10 @@
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/src/CMakeFiles/arithmetic.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/src/CMakeFiles/edit_cache.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/src/CMakeFiles/rebuild_cache.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/sample/CMakeFiles/main.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/sample/CMakeFiles/samrab1.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/sample/CMakeFiles/samrab2.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/sample/CMakeFiles/edit_cache.dir
+D:/study/AaSD/mp2-lab4-polynom/out/build/x64-Debug/sample/CMakeFiles/rebuild_cache.dir

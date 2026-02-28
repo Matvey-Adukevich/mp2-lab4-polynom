@@ -1,12 +1,14 @@
 #pragma once
 #include <stdexcept>
+#include "titerator.h"
+#include "tnode.h"
 
-template<typename T>
-struct TNode {
-	T val;
-	TNode* next;
-	TNode(const T& _val = T(), TNode* _next = nullptr) :val(_val), next(_next) {};
-};
+//template<typename T>
+//struct TNode {
+//	T val;
+//	TNode* next;
+//	TNode(const T& _val = T(), TNode* _next = nullptr) :val(_val), next(_next) {};
+//};
 
 template<typename T>
 class TList
@@ -17,7 +19,7 @@ public:
 	TList() :fp(nullptr), lp(nullptr) {};
 
 	void delFirst() {
-		if (fp == nullptr) throw out_of_range("empty list");
+		if (fp == nullptr) throw std::out_of_range("empty list");
 		TNode<T>* temp = fp;
 		fp = fp->next;
 		if (fp == nullptr) lp = nullptr;
@@ -32,7 +34,7 @@ public:
 
 	void Sort() {
 		bool fl = false;
-		if (fp == nullptr) throw out_of_range("emply list(sort)");
+		if (fp == nullptr) throw std::out_of_range("emply list(sort)");
 		if (fp->next == nullptr) return;
 		while (!fl) {
 			fl = true;
@@ -74,6 +76,14 @@ public:
 			lp = AddAfter(lp, val);
 		}
 	}
+
+	TNode<T>* GetFP() {
+		return fp;
+	}
+
+	/*TIterator<T> iterator() {
+		return TIterator<T>(fp);
+	}*/
 
 	~TList() {
 		Clean();
