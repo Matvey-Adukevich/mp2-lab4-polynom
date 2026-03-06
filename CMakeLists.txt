@@ -1,7 +1,14 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.16)
 
 set(PROJECT_NAME arithmetic)
 project(${PROJECT_NAME})
+
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
+
 
 # TODO(Korniakov): not sure if these lines are needed
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE)
@@ -18,14 +25,20 @@ set(MP2_LIBRARY "${PROJECT_NAME}")
 set(MP2_TESTS   "test_${PROJECT_NAME}")
 set(MP2_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
-include_directories("${MP2_INCLUDE}" gtest)
+set(ANTLR_RUNTIME_SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/antlr4-cpp-runtime-4.13.2-source/runtime/src")
+set(ANTLR_LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/antlr_sln/runtime/Debug")
 
-# BUILD
+#include_directories("${MP2_INCLUDE}" gtest)
+
 add_subdirectory(src)
 add_subdirectory(sample)
+#add_subdirectory(antlr-4.13.2)
+#add_subdirectory(parser)
 #add_subdirectory(samples_svetofor)
 #add_subdirectory(gtest)
-#add_subdirectory(test)
+add_subdirectory(googletest-main)
+add_subdirectory(test)
+
 
 # REPORT
 message( STATUS "")

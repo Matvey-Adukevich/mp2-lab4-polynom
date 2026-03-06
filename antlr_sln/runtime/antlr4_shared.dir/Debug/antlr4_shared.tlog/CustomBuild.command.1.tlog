@@ -1,0 +1,10 @@
+^D:\STUDY\AASD\ANTLR\ANTLR4-CPP-RUNTIME-4.13.2-SOURCE\RUNTIME\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source -BD:/study/AaSD/antlr/antlr_sln --check-stamp-file D:/study/AaSD/antlr/antlr_sln/runtime/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

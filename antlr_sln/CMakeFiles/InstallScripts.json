@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/study/AaSD/antlr/antlr_sln/cmake_install.cmake",
+		"D:/study/AaSD/antlr/antlr_sln/runtime/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

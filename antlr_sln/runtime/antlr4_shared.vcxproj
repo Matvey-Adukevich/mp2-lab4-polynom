@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C816F31-30E5-35FA-8FE3-7D226E078D28}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>antlr4_shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">antlr4_shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">antlr4-runtime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">antlr4_shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">antlr4-runtime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">antlr4_shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">antlr4-runtime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">antlr4_shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">antlr4-runtime</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ANTLR4CPP_EXPORTS;CMAKE_INTDIR="Debug";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ANTLR4CPP_EXPORTS;CMAKE_INTDIR=\"Debug\";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/study/AaSD/antlr/antlr_sln/runtime/Debug/antlr4-runtime.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/study/AaSD/antlr/antlr_sln/runtime/Debug/antlr4-runtime.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.13</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4251;4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ANTLR4CPP_EXPORTS;CMAKE_INTDIR="Release";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ANTLR4CPP_EXPORTS;CMAKE_INTDIR=\"Release\";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/study/AaSD/antlr/antlr_sln/runtime/Release/antlr4-runtime.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/study/AaSD/antlr/antlr_sln/runtime/Release/antlr4-runtime.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.13</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4251;4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ANTLR4CPP_EXPORTS;CMAKE_INTDIR="MinSizeRel";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ANTLR4CPP_EXPORTS;CMAKE_INTDIR=\"MinSizeRel\";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/study/AaSD/antlr/antlr_sln/runtime/MinSizeRel/antlr4-runtime.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/study/AaSD/antlr/antlr_sln/runtime/MinSizeRel/antlr4-runtime.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.13</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ANTLR4CPP_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ANTLR4CPP_EXPORTS;CMAKE_INTDIR=\"RelWithDebInfo\";antlr4_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern;D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/study/AaSD/antlr/antlr_sln/runtime/RelWithDebInfo/antlr4-runtime.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/study/AaSD/antlr/antlr_sln/runtime/RelWithDebInfo/antlr4-runtime.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.13</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source/runtime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source -BD:/study/AaSD/antlr/antlr_sln --check-stamp-file D:/study/AaSD/antlr/antlr_sln/runtime/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source/runtime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source -BD:/study/AaSD/antlr/antlr_sln --check-stamp-file D:/study/AaSD/antlr/antlr_sln/runtime/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source/runtime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source -BD:/study/AaSD/antlr/antlr_sln --check-stamp-file D:/study/AaSD/antlr/antlr_sln/runtime/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source/runtime/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/study/AaSD/antlr/antlr4-cpp-runtime-4.13.2-source -BD:/study/AaSD/antlr/antlr_sln --check-stamp-file D:/study/AaSD/antlr/antlr_sln/runtime/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\study\AaSD\antlr\antlr_sln\runtime\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ANTLRErrorListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ANTLRErrorStrategy.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ANTLRFileStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ANTLRInputStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\BailErrorStrategy.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\BaseErrorListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\BufferedTokenStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\CharStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\CommonToken.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\CommonTokenFactory.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\CommonTokenStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ConsoleErrorListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\DefaultErrorStrategy.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\DiagnosticErrorListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\Exceptions.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\FailedPredicateException.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\InputMismatchException.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\IntStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\InterpreterRuleContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\Lexer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\LexerInterpreter.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\LexerNoViableAltException.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ListTokenSource.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\NoViableAltException.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\Parser.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ParserInterpreter.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ParserRuleContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\ProxyErrorListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\RecognitionException.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\Recognizer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\RuleContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\RuleContextWithAltNum.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\RuntimeMetaData.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\Token.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\TokenSource.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\TokenStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\TokenStreamRewriter.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\UnbufferedCharStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\UnbufferedTokenStream.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\Vocabulary.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\WritableToken.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATN.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNConfig.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNConfigSet.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNDeserializationOptions.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNDeserializer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNSimulator.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNState.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ATNStateType.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ActionTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\AmbiguityInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ArrayPredictionContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\AtomTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ContextSensitivityInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\DecisionEventInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\DecisionInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\DecisionState.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\EpsilonTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ErrorInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LL1Analyzer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerATNConfig.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerATNSimulator.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerActionExecutor.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerChannelAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerCustomAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerIndexedCustomAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerModeAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerMoreAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerPopModeAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerPushModeAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerSkipAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LexerTypeAction.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\LookaheadEventInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\NotSetTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\OrderedATNConfigSet.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ParseInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ParserATNSimulator.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PrecedencePredicateTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PredicateEvalInfo.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PredicateTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PredictionContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PredictionContextCache.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PredictionContextMergeCache.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\PredictionMode.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\ProfilingATNSimulator.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\RangeTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\RuleTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\SemanticContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\SetTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\SingletonPredictionContext.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\StarLoopbackState.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\Transition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\TransitionType.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\atn\WildcardTransition.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa\DFA.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa\DFASerializer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa\DFAState.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\dfa\LexerDFASerializer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\internal\Synchronization.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc\InterpreterDataReader.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc\Interval.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc\IntervalSet.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc\MurmurHash.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\misc\Predicate.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support\Any.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support\Arrays.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support\CPPUtils.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support\StringUtils.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\support\Utf8.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\ErrorNodeImpl.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\IterativeParseTreeWalker.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\ParseTree.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\ParseTreeListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\ParseTreeVisitor.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\ParseTreeWalker.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\TerminalNodeImpl.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\Trees.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\Chunk.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\ParseTreeMatch.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\ParseTreePattern.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\ParseTreePatternMatcher.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\RuleTagToken.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\TagChunk.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\TextChunk.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\pattern\TokenTagToken.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPath.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathElement.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathLexer.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathLexerErrorListener.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathRuleAnywhereElement.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathRuleElement.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathTokenAnywhereElement.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathTokenElement.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathWildcardAnywhereElement.cpp" />
+    <ClCompile Include="D:\study\AaSD\antlr\antlr4-cpp-runtime-4.13.2-source\runtime\src\tree\xpath\XPathWildcardElement.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\study\AaSD\antlr\antlr_sln\ZERO_CHECK.vcxproj">
+      <Project>{6C838E30-0938-32C3-B9A0-2A955CE9F402}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

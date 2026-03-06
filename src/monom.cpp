@@ -3,10 +3,6 @@
 
 using namespace std;
 
-//void Monom::AddMonom() {
-//	
-//}
-
 double Monom::GetA() const { return this->a; }
 unsigned int Monom::GetN() const { return this->N; }
 int Monom::GetPowZ() const {
@@ -64,14 +60,14 @@ void Monom::SetPowZ(unsigned int z_pow) {
 
 Monom Monom::operator+(const Monom& m) {
 	if (this->N != m.GetN()) throw out_of_range("error monom +");
-	return Monom(this->GetA() + m.GetA(), this->x, this->y, this->z, this->N);
+	return Monom(this->GetA() + m.GetA(), this->N);
 }
 Monom Monom::operator-(const Monom& m) {
 	if (this->N != m.GetN()) throw out_of_range("error monom -");
-	return Monom(this->GetA() - m.GetA(), this->x, this->y, this->z, this->N);
+	return Monom(this->GetA() - m.GetA(), this->N);
 }
 Monom Monom::operator*(const Monom& m) {
-	return Monom(this->GetA() * m.GetA(), this->x, this->GetPowX() + m.GetPowX(), this->y, this->GetPowY() + m.GetPowY(), this->z, this->GetPowZ() + m.GetPowZ());
+	return Monom(this->GetA() * m.GetA(), this->GetPowX() + m.GetPowX(), this->GetPowY() + m.GetPowY(), this->GetPowZ() + m.GetPowZ());
 }
 bool Monom::operator>(const Monom& m) const{
 	return this->N > m.GetN();
@@ -86,13 +82,10 @@ bool Monom::operator!=(const Monom& m) const {
 	return this->N != m.GetN();
 }
 
-Monom::Monom() :N(0), a(0.0), x(0.0), y(0.0), z(0.0) {};
+Monom::Monom() :N(0), a(0.0) {};
 
-Monom::Monom(double a, double x, unsigned int x_pow, double y, unsigned int y_pow, double z, unsigned int z_pow) {
+Monom::Monom(double a, unsigned int x_pow, unsigned int y_pow, unsigned int z_pow) {
 	this->a = a;
-	this->x = x;
-	this->y = y;
-	this->z = z;
 
 	this->N = 0;
 	this->N = z_pow;
@@ -104,19 +97,13 @@ Monom::Monom(double a, double x, unsigned int x_pow, double y, unsigned int y_po
 	this->N = N | mask;
 }
 
-Monom::Monom(double a, double x, double y, double z,unsigned int N) {
+Monom::Monom(double a, unsigned int N) {
 	this->a = a;
-	this->x = x;
-	this->y = y;
-	this->z = z;
 	this->N = N;
 }
 
 Monom::Monom(const Monom& other) {
 	this->a = other.a;
-	this->x = other.x;
-	this->y = other.y;
-	this->z = other.z;
 	this->N = other.N;
 }
 

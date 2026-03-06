@@ -3,9 +3,7 @@
 class Monom {
 	unsigned int N; //под степени
 	double a;
-	double x, y, z;
 public:
-	//void AddMonom(double a, double x, unsigned int x_pow, double y, unsigned int y_pow, double z, unsigned int z_pow);
 
 	double GetA() const;
 	unsigned int GetN() const;
@@ -28,7 +26,7 @@ public:
 	bool operator!=(const Monom& m) const;
 
 	Monom();
-	Monom(double a, double x, unsigned int x_pow, double y, unsigned int y_pow, double z, unsigned int z_pow);
-	Monom(double a, double x, double y, double z, unsigned int N);
+	Monom(double a, unsigned int x_pow, unsigned int y_pow, unsigned int z_pow);
+	Monom(double a, unsigned int N);
 	Monom(const Monom& other);
 };
