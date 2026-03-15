@@ -72,6 +72,11 @@ void Polynom::AddMonom(const Monom& m) {
 	monoms->AddLast(m);
 }
 
+void Polynom::AddMonomNoSort(const Monom& m) {
+	if (m.GetA() == 0) return;
+	monoms->AddLast(m);
+}
+
 //void Polynom::AddMonom(const Monom& m) {
 //	if (m.GetA() == 0) {
 //		return;
@@ -153,7 +158,68 @@ Polynom Polynom::operator+(const Polynom& p) {
 	Polynom polynom;
 	TIterator<Monom> it1(monoms->GetFP());
 	TIterator<Monom> it2(p.GetMonoms()->GetFP());
-	while (it1.HasNext()) {
+	Monom tmp1;
+	Monom tmp2;
+	if (it1.HasNext()) {
+		tmp1 = it1.Next();
+	}
+	if (it2.HasNext()) {
+		tmp2 = it2.Next();
+	}
+	while (it1.HasNext() || it2.HasNext()) {
+		if (!it1.HasNext()) {
+			polynom.AddMonomNoSort(tmp2);
+			if (it2.HasNext()) {
+				tmp2 = it2.Next();
+			}
+		}
+		else if (!it2.HasNext()) {
+			polynom.AddMonomNoSort(tmp1);
+			if (it1.HasNext()) {
+				tmp1 = it1.Next();
+			}
+		}
+		else if (tmp1 > tmp2) {
+			polynom.AddMonomNoSort(tmp2);
+			if (it2.HasNext()) {
+				tmp2 = it2.Next();
+			}
+		}
+		else if (tmp1 < tmp2) {
+			polynom.AddMonomNoSort(tmp1);
+			if (it1.HasNext()) {
+				tmp1 = it1.Next();
+			}
+		}
+		else if (tmp1 == tmp2) {
+			polynom.AddMonomNoSort(tmp1 + tmp2);
+			if (it1.HasNext()) {
+				tmp1 = it1.Next();
+			}
+			if (it2.HasNext()) {
+				tmp2 = it2.Next();
+			}
+		}
+	}
+	if (tmp1 == tmp2) {
+		polynom.AddMonomNoSort(tmp1 + tmp2);
+	}
+	else {
+		if (tmp1 < tmp2) {
+			polynom.AddMonomNoSort(tmp1);
+			polynom.AddMonomNoSort(tmp2);
+		}
+		else {
+			polynom.AddMonomNoSort(tmp2);
+			polynom.AddMonomNoSort(tmp1);
+		}
+		
+	}
+	return polynom;
+	/*Polynom polynom;
+	TIterator<Monom> it1(monoms->GetFP());
+	TIterator<Monom> it2(p.GetMonoms()->GetFP());
+	while (it1.HasNext()||it2.HasNext()) {
 		Monom tmp = it1.Next();
 		polynom.AddMonom(tmp);
 	}
@@ -161,7 +227,7 @@ Polynom Polynom::operator+(const Polynom& p) {
 		Monom tmp = it2.Next();
 		polynom.AddMonom(tmp);
 	}
-	return polynom;
+	return polynom;*/
 }	
 
 Polynom Polynom::operator-(const Polynom& p) {

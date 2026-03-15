@@ -8,6 +8,7 @@ class Polynom {
 	TList<Monom>* monoms;
 public:
 	void AddMonom(const Monom& m);
+	void AddMonomNoSort(const Monom& m);
 	void Print();
 
 	TList<Monom>* GetMonoms() const;

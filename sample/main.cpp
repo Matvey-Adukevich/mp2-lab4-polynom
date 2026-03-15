@@ -14,7 +14,7 @@ int main() {
     /*Polynom polynom2;
     polynom2.AddMonom(monom1);
     polynom2.AddMonom(monom2);*/
-    Polynom polynom3("1.2x^2y^3z^5+2.45y^35-3.1x^1y^3-4.0x^9");
+    Polynom polynom3("1.0x^2y^3z^5+2.45y^35-3.1x^1y^3-4.0x^9");
     polynom.Print();
     polynom3.Print();
     Polynom polynom_sum = polynom + polynom3;
